@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Licores Premium</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: #000000;
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🥃 LICORES PREMIUM 🥃</h1>
+            <p>Selección Exclusiva</p>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">🌟 Tequilas Blancos</h2>
+            
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-name">TEQUILA 1800 BLANCO</div>
+                    <div class="product-price">$520</div>
+                </div>
+                <div class="product-details">
+                    <span class="ml-indicator">700 ML</span>
+                </div>
+                <div class="product-details">
+                    Cristalino y puro, perfecto para disfrutar solo o en cocteles
+                </div>
+                <span class="product-badge">100% Agave</span>
+                <button class="btn-order" onclick="ordenar('Tequila 1800 Blanco 700ml')">Ordenar Ahora</button>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">🥇 Tequilas Reposados</h2>
+            
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-name">TEQUILA 1800 REPOSADO</div>
+                    <div class="product-price">$580</div>
+                </div>
+                <div class="product-details">
+                    <span class="ml-indicator">700 ML</span>
+                </div>
+                <div class="product-details">
+                    Suave y equilibrado, con notas de roble y vainilla
+                </div>
+                <span class="product-badge">Reposado</span>
+                <button class="btn-order" onclick="ordenar('Tequila 1800 Reposado 700ml')">Ordenar Ahora</button>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">🏆 Tequilas Añejos</h2>
+            
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-name">TEQUILA JIMADOR AÑEJO</div>
+                    <div class="product-price">$550</div>
+                </div>
+                <div class="product-details">
+                    <span class="ml-indicator">700 ML</span>
+                </div>
+                <div class="product-details">
+                    Carácter robusto con toques de madera y especias
+                </div>
+                <span class="product-badge">Añejo</span>
+                <button class="btn-order" onclick="ordenar('Tequila Jimador Añejo 700ml')">Ordenar Ahora</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-name">TEQUILA CAZADORES AÑEJO</div>
+                    <div class="product-price">$620</div>
+                </div>
+                <div class="product-details">
+                    <span class="ml-indicator">700 ML</span>
+                </div>
+                <div class="product-details">
+                    Sabor intenso y complejo, ideal para paladares exigentes
+                </div>
+                <span class="product-badge">Añejo</span>
+                <button class="btn-order" onclick="ordenar('Tequila Cazadores Añejo 700ml')">Ordenar Ahora</button>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">💎 Cristalinos Premium</h2>
+            
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-name">TEQUILA CAZADORES AÑEJO CRISTALINO</div>
+                    <div class="product-price">$780</div>
+                </div>
+                <div class="product-details">
+                    <span class="ml-indicator">750 ML</span>
+                </div>
+                <div class="product-details">
+                    Ultra suave y transparente, sabor añejo sin el color
+                </div>
+                <span class="product-badge">Cristalino</span>
+                <button class="btn-order" onclick="ordenar('Tequila Cazadores Añejo Cristalino 750ml')">Ordenar Ahora</button>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">🎯 Tamaño Especial</h2>
+            
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-name">TEQUILA JARAMA</div>
+                    <div class="product-price">$450</div>
+                </div>
+                <div class="product-details">
+                    <span class="ml-indicator">1.75 L</span>
+                </div>
+                <div class="product-details">
+                    Presentación grande, ideal para fiestas y reuniones
+                </div>
+                <span class="product-badge">Tamaño Fiesta</span>
+                <button class="btn-order" onclick="ordenar('Tequila Jarama 1.75L')">Ordenar Ahora</button>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">🔥 Mezcal Artesanal</h2>
+            
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-name">MEZCAL HECHIZO REPOSADO</div>
+                    <div class="product-price">$650</div>
+                </div>
+                <div class="product-details">
+                    <span class="ml-indicator">750 ML</span>
+                </div>
+                <div class="product-details">
+                    Artesanal, ahumado y con carácter único mexicano
+                </div>
+                <span class="product-badge">Artesanal</span>
+                <button class="btn-order" onclick="ordenar('Mezcal Hechizo Reposado 750ml')">Ordenar Ahora</button>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">🍷 Brandies Premium</h2>
+            
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-name">BRANDY PRESIDENTE SOLERA</div>
+                    <div class="product-price">$320</div>
+                </div>
+                <div class="product-details">
+                    <span class="ml-indicator">700 ML</span>
+                </div>
+                <div class="product-details">
+                    Elegante y suave, con crianza en sistema solera
+                </div>
+                <span class="product-badge">Solera</span>
+                <button class="btn-order" onclick="ordenar('Brandy Presidente Solera 700ml')">Ordenar Ahora</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-name">BRANDY PRESIDENTE CLÁSICO</div>
+                    <div class="product-price">$280</div>
+                </div>
+                <div class="product-details">
+                    <span class="ml-indicator">750 ML</span>
+                </div>
+                <div class="product-details">
+                    Tradicional y versátil, ideal para cualquier ocasión
+                </div>
+                <span class="product-badge">Clásico</span>
+                <button class="btn-order" onclick="ordenar('Brandy Presidente Clásico 750ml')">Ordenar Ahora</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-info">
+                📍 Envíos a toda la ciudad<br>
+                ⏰ Horario: 10:00 AM - 10:00 PM
+            </div>
+            <div class="footer-contact">
+                📱 WhatsApp: (612) 123-4567
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function ordenar(producto) {
+            alert(`¡Gracias por tu interés en ${producto}!\n\nSerás redirigido a WhatsApp para completar tu orden.`);
+            // Aquí puedes agregar tu enlace de WhatsApp
+             window.open('https://wa.me/6121596873?text=' + encodeURIComponent('Hola, me interesa: ' + producto), '_blank');
+        }
+    </script>
+</body>
+</html>
